@@ -1,7 +1,50 @@
 ---
 layout: default
+team: 
+  - name: Eva
+    bio: Writer and SEO Specialist
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut,
+    eaque ratione amet neque ipsum.
+    profile_image: /images/eva-headshot.jpg
+  - name: Dan
+    bio: Website Development and Design
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut,
+    eaque ratione amet neque ipsum.
+    profile_image: /images/dan-headshot.JPG
+  - name: Jane
+    bio: Public Relations and Marketing 
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut,
+    eaque ratione amet neque ipsum.
+    profile_image: /images/rando-headshot.jpg
 ---
 
-<section> 
-  About
+<!-- Banner section -->
+<section class="tall-60 grid bg-green">
+  <div class="col-5-middle editable padded bg-green">
+    <h2> Meet the writer. </h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut,
+      eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia
+      corporis repellendus inventore perspiciatis illum totam nihil maiores!
+      Molestiae, consequuntur?
+    </p>
+  </div>
+  <div class="col-7 bg-image bg-plant"> </div>
+</section>
+
+<section class="padded"> 
+
+  {% for person in page.team %}
+
+    <div class="grid"> 
+      <div class="col-5">  
+        <img src="{{ person.profile_image }}">
+        <h3> {{ person.name }} </h3>
+        <p> <strong> {{ person.bio }} </strong> </p>
+        <p> {{ person.description }} </p>
+      </div>
+    </div>
+
+  {% endfor %}
+
 </section>
