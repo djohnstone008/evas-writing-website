@@ -94,6 +94,16 @@ html {
   color: rgb(240, 240, 240);
 }
 
+.capped-width {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.capped-width-narrow {
+  max-width: 900px;
+  margin: auto;
+}
+
 /* Typography */
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -200,6 +210,10 @@ footer a:hover {
 }
 .bg-writing {
   background-image: url("/images/mockup.jpg");
+}
+
+.profile-image {
+  border-radius: 100%;
 }
 
 /* SM - max-width in pixels approximately 768px */

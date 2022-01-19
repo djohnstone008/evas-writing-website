@@ -3,25 +3,22 @@ layout: default
 team: 
   - name: Eva
     bio: Writer and SEO Specialist
-    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut,
-    eaque ratione amet neque ipsum.
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut eaque ratione amet neque ipsum.
     profile_image: /images/eva-headshot.jpg
   - name: Dan
     bio: Website Development and Design
-    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut,
-    eaque ratione amet neque ipsum.
-    profile_image: /images/dan-headshot.JPG
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut eaque ratione amet neque ipsum.
+    profile_image: /images/dan-headshot.jpg
   - name: Jane
     bio: Public Relations and Marketing 
-    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut,
-    eaque ratione amet neque ipsum.
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut eaque ratione amet neque ipsum.
     profile_image: /images/rando-headshot.jpg
 ---
 
 <!-- Banner section -->
 <section class="tall-60 grid bg-green">
   <div class="col-5-middle editable padded bg-green">
-    <h2> Meet the writer. </h2>
+    <h2> Meet the team. </h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut,
       eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia
@@ -33,12 +30,16 @@ team:
 </section>
 
 <section class="padded"> 
+  <div class="capped-width"> 
 
   {% for person in page.team %}
 
     <div class="grid"> 
-      <div class="col-5">  
-        <img src="{{ person.profile_image }}">
+      <div class="col-5 padded-1">  
+        <img src="{{ person.profile_image }} class="profile-image">
+      </div>
+
+      <div class="col-7-middle padded-1"> 
         <h3> {{ person.name }} </h3>
         <p> <strong> {{ person.bio }} </strong> </p>
         <p> {{ person.description }} </p>
@@ -46,5 +47,6 @@ team:
     </div>
 
   {% endfor %}
+  </div>
 
 </section>
