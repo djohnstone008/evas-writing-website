@@ -1,7 +1,45 @@
 ---
 layout: default
+banner_image: /images/plant-2.jpg
 ---
 
-<section> 
-  Contact
+<!-- Banner section -->
+<section class="tall-60 grid bg-green">
+  <div class="col-7 bg-image" style="background-image: url('{{ page.banner_image }}');"> </div>
+  <div class="col-5-middle editable padded bg-green">
+    <h2> Get in touch! </h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut,
+      eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia
+      corporis repellendus inventore perspiciatis illum totam nihil maiores!
+      Molestiae, consequuntur?
+    </p>
+  </div>
 </section>
+
+  <section class="padded capped-width bg-featured"> 
+    <div class="center editable margin-b-2">
+      <h2> The personal touch </h2>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi iusto soluta et ratione quod dicta inventore aliquam ea sint, libero aspernatur optio a distinctio quam nobis beatae quasi cupiditate. </p>
+    </div>
+
+    <!----------------- Contact form style number 2 ----------------->
+    <form class="form-style-2 button" action="https://formspree.io/f/mbjwrknn"
+    method="POST">
+    <!-----action="https://formspree.io/f/mbjwrknn"
+    method="POST" IS TO CONNECT THE FORM TO FORM SPREE FOR SUBMISSION -->
+      <label for="_name"> Your Name </label>
+      <input type="text" name="_name" id="_name" placeholder="Name" />
+      
+      <label for="_replyto"> Your Email </label>
+      <input type="email" name="_replyto" id="_replyto"  
+      placeholder="Email" />
+      
+      <label for="message"> Tell me everything about you... </label>
+      <textarea name="message" id="message" placeholder="Hey, I'm Joe and I want..."></textarea>
+      
+      <button type="submit"> SUBMIT </button> 
+    </form> 
+  </section>
+
+  

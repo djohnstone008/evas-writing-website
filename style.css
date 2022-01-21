@@ -211,7 +211,7 @@ footer a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/images/leaves.jpg");
+  background-image: url("/images/plant-3.jpg");
 }
 
 .landscape {
@@ -234,10 +234,93 @@ footer a:hover {
   background-image: url("/images/mockup.jpg");
 }
 
+.bg-plant-2 {
+  background-image: url("/images/plant-2.jpg");
+}
+
 .profile-image {
   border-radius: 100%;
   width: 300px;
   height: 300px;
+}
+
+/* --------Contact form style number 2----------- */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 5%;
+  font-family: 'Lato', sans-serif;
+  color: rgb(90,90,95);
+}
+form input,
+form textarea{
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 2px solid rgb(220,220,220);
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+form input:focus,
+form textarea:focus {
+  border-color: #a2745c;
+}
+textarea {
+  min-height: 5rem;
+}
+form label {
+  margin-top: 1rem;
+  display: block;
+  color: #6C7A89;
+  font-weight: bold;
+}
+
+/*-----new elements--------*/
+
+.form-style-2 input,
+.form-style-2 textarea {
+  border: 2px solid #a2745c;
+  background-color: white;
+}
+.form-style-2 label {
+  color: #a2745c;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.form-style-2 button {
+  border: 2px solid #a2745c;
+  background-color: white;
+  color: #a2745c;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+.form-style-2 input:focus,
+.form-style-2 textarea:focus {
+  border-color: #d3b4a2;
+}
+
+form button {
+  background-color: #6C7A89;
+  color: white;
+  border: none;
+  padding: 0.5rem 2rem;
+  letter-spacing: 0.1em;
+  margin: 0.5rem 0;
+}
+
+form .button {
+  border: 2px solid #d3b4a2;
+  background: none;
+  color: #d3b4a2; 
+  font-weight: bold;
+  padding: 0.5rem;
 }
 
 /* Responsive video */
