@@ -1,7 +1,64 @@
 ---
 layout: default
+features:
+  - title: Professional Content
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?
+    featured_image: /images/bali-rice-terraces.jpg
+  - title: Optimized Copy
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?
+    featured_image: /images/bali-rice-terraces.jpg
 ---
 
-<section> 
-  Services
+<!-- Banner section -->
+<section class="bg-image bg-plant padded tall-70 grid-middle-right">
+  <div class="col-6_sm-10-spaceBetween editable left">
+    <h2> Our Services </h2>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut,
+      eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia
+      corporis repellendus inventore perspiciatis illum totam nihil maiores!
+      Molestiae, consequuntur? </p>
+  </div>
+</section>
+
+<section class="padded bg-green grid"> 
+  <div class="col-4_sm-12"> 
+    <h3> Content. </h3>
+    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est similique facere, cupiditate ad et deleniti tempore commodi expedita, eaque temporibus quam numquam doloribus adipisci rem iure! Rem, vero temporibus! Aperiam? </p>
+  </div>
+  <div class="col-4_sm-12"> 
+    <h3> Research. </h3>
+    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est similique facere, cupiditate ad et deleniti tempore commodi expedita, eaque temporibus quam numquam doloribus adipisci rem iure! Rem, vero temporibus! Aperiam? </p>
+  </div>
+  <div class="col-4_sm-12"> 
+    <h3> SEO. </h3>
+    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est similique facere, cupiditate ad et deleniti tempore commodi expedita, eaque temporibus quam numquam doloribus adipisci rem iure! Rem, vero temporibus! Aperiam? </p>
+  </div>
+  <div class="col-12"> 
+    <a href="/contact" class="button"> Get in touch! </a>
+  </div>
+</section>
+
+<!-- Newsletter section -->
+{% include newsletter-signup.html %}
+
+
+<!-- Features / about blocks -->
+<section>
+
+  {% for item in page.features %}
+
+  <div class="grid flex-flip-alternate">
+
+    <div class="col-5_sm-12-middle padded">
+      <h3> {{ item.title }} </h3>
+      <p> {{ item.description }} </p>
+    </div>
+    <div class="col-7_sm-12-middle padded">
+      <img src="{{ item.featured_image }}" alt="{{ item.title }}">
+    </div>
+
+  </div>
+
+  {% endfor %}
+
 </section>
