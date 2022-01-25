@@ -1,3 +1,15 @@
+/* CSS variables */
+
+:root {
+  --rust: #d3b4a2
+  --green: #95a542
+  --dark: #a2745c
+  --hover: #c0d2db
+  --hoverpink: #d3b4a2
+  --grey: #6C7A89
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -76,13 +88,13 @@ html {
 
 
 .bg-rust {
-  background-color: #d3b4a2;
+  background-color: var(--rust);
 }
 .bg-green {
-  background-color: #95a542;
+  background-color: var(--green);
 }
 .bg-dark {
-  background-color: #a2745c;
+  background-color: var(--dark);
 }
 
 .light-text {
@@ -163,7 +175,7 @@ nav a {
 }
 
 a:hover {
-  color: #c0d2db;
+  color: var(--hover);
 }
 
 .button {
@@ -176,7 +188,7 @@ a:hover {
 }
 
 .bg-dark .button:hover {
-  color: #d3b4a2;
+  color: var(--hoverpink);
 }
 
 .subtle {
@@ -195,7 +207,7 @@ header {
 }
 
 footer a:hover {
-  color: #d3b4a2;
+  color: var(--hoverpink);
 }
 
 /* Icon Grid Section  */
@@ -269,7 +281,7 @@ form textarea{
 }
 form input:focus,
 form textarea:focus {
-  border-color: #a2745c;
+  border-color: var(--dark);
 }
 textarea {
   min-height: 5rem;
@@ -277,7 +289,7 @@ textarea {
 form label {
   margin-top: 1rem;
   display: block;
-  color: #6C7A89;
+  color: var(--grey);
   font-weight: bold;
 }
 
@@ -285,29 +297,29 @@ form label {
 
 .form-style-2 input,
 .form-style-2 textarea {
-  border: 2px solid #a2745c;
+  border: 2px solid var(--dark);
   background-color: white;
 }
 .form-style-2 label {
-  color: #a2745c;
+  color: var(--dark);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 .form-style-2 button {
-  border: 2px solid #a2745c;
+  border: 2px solid var(--dark);
   background-color: white;
-  color: #a2745c;
+  color: var(--dark);
   font-size: 1rem;
   letter-spacing: 0.05em;
   font-weight: bold;
 }
 .form-style-2 input:focus,
 .form-style-2 textarea:focus {
-  border-color: #d3b4a2;
+  border-color: var(--rust);
 }
 
 form button {
-  background-color: #6C7A89;
+  background-color: var(--grey);
   color: white;
   border: none;
   padding: 0.5rem 2rem;
@@ -316,9 +328,9 @@ form button {
 }
 
 form .button {
-  border: 2px solid #d3b4a2;
+  border: 2px solid var(--rust);
   background: none;
-  color: #d3b4a2; 
+  color: var(--rust); 
   font-weight: bold;
   padding: 0.5rem;
 }
