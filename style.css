@@ -1,12 +1,12 @@
 /* CSS variables */
 
 :root {
-  --rust: #d3b4a2
-  --green: #95a542
-  --dark: #a2745c
-  --hover: #c0d2db
-  --hoverpink: #d3b4a2
-  --grey: #6C7A89
+  --rust: #d3b4a2;
+  --green: #95a542;
+  --dark: #a2745c;
+  --hover: #c0d2db;
+  --hoverpink: #d3b4a2;
+  --grey: #6C7A89;
 }
 
 
