@@ -256,6 +256,11 @@ footer a:hover {
   height: 300px;
 }
 
+/* Shopify */
+.shop {
+  background-color: rgb(240, 240, 240);
+}
+
 /* --------Contact form style number 2----------- */
 
 *{
